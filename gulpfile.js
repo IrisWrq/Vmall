@@ -58,7 +58,8 @@ function webTask(){
     src('./dist')
     .pipe(webserver({
         port:8080,
-        open:'/views/index.html'
+        open:'/views/index.html',
+        livereload:true,
         }))
 }
 
